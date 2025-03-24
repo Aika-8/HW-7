@@ -6,7 +6,7 @@ export const TodoItem = ({ id, title, onDelete, onUpdate }) => {
   return (
     <>
       <StyledLi>
-        <p>{title}</p>
+        <StyledPTag>{title}</StyledPTag>
         <StyledDivBtn>
           <Button variant="update" onClick={() => onUpdate(id)}>
             update
@@ -27,6 +27,14 @@ const StyledLi = styled.li`
   align-items: center;
   padding: 0px 10px;
   border: 3px solid brown;
+`;
+const StyledPTag = styled.p`
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
 `;
 const StyledDivBtn = styled.div`
   display: flex;
