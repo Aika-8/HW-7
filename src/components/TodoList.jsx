@@ -24,8 +24,5 @@ const StyledUl = styled.ul`
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  margin-top: 50px;
-  &:last-child {
-    margin-bottom: 50px;
-  }
+  margin: 50px 0px;
 `;
