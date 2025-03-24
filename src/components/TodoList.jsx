@@ -26,7 +26,7 @@ const StyledUl = styled.ul`
   align-items: center;
   gap: 30px;
   margin-top: 50px;
-  &:last-child {
+  /* &:last-child {
     margin-bottom: 50px;
-  }
+  } */
 `;
