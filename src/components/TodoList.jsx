@@ -22,11 +22,10 @@ const StyledUl = styled.ul`
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   gap: 30px;
   margin-top: 50px;
-  /* &:last-child {
+  &:last-child {
     margin-bottom: 50px;
-  } */
+  }
 `;
