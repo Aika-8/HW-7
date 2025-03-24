@@ -1,0 +1,29 @@
+import React from "react";
+import { TodoItem } from "./TodoItem";
+import styled from "styled-components";
+
+export const TodoList = ({ array, onDelete, onUpdate }) => {
+  return (
+    <StyledUl>
+      {array.map((item) => (
+        <TodoItem
+          key={item.id}
+          {...item}
+          onDelete={onDelete}
+          onUpdate={onUpdate}
+        />
+      ))}
+    </StyledUl>
+  );
+};
+const StyledUl = styled.ul`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+  &:last-child {
+    margin-bottom: 50px;
+  }
+`;
